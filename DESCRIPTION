@@ -1,8 +1,8 @@
 Package: RWebLogo
 Type: Package
 Title: plotting custom sequence logos
-Version: 1.0.1
-Date: 2014-03-07
+Version: 1.0.2
+Date: 2016-07-26
 Author: Omar Wagih
 Maintainer: Omar Wagih <wagih@ebi.ac.uk>
 Description: RWebLogo is a wrapper for the WebLogo python package
@@ -15,9 +15,6 @@ Description: RWebLogo is a wrapper for the WebLogo python package
     relative frequency of each amino or nucleic acid at that position. In
     general, a sequence logo provides a richer and more precise description of,
     for example, a binding site, than would a consensus sequence.
-Imports:
-    raster,
-    jpeg,
-    findpython
+Imports: raster, jpeg, findpython
 License: BSD_3_clause + file LICENSE
 SystemRequirements: Python (>=2.6) in path, ghostscript (>=9.0)

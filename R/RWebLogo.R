@@ -241,8 +241,8 @@ weblogo = function(seqs, file.in,
     stop(sprintf('The input file %s does not exist, please use a valid input file!', file.in))
   }
   
-  #'/Users/omarwagih/Development/RWebLogo/inst/extdata/weblogo-3.3/weblogo'
-  exec = file.path( system.file("extdata", "weblogo-3.3", package="RWebLogo"), 'weblogo')
+  #'/Users/omarwagih/Development/RWebLogo/inst/extdata/weblogo-3.5/weblogo'
+  exec = file.path( system.file("extdata", "weblogo-3.5", package="RWebLogo"), 'weblogo')
   z = c(exec,
         sprintf('< %s > %s', file.in, file.out))
   

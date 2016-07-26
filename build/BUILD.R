@@ -1,12 +1,9 @@
-setwd('~/Development/')
+setwd("~/Desktop/")
 
-remove.packages('RWebLogo', lib='/Library/Frameworks/R.framework/Versions/Current/Resources/library')
+remove.packages('RWebLogo')
 
-system('rm -rf RWebLogo/build/RWebLogo_1.0.1.tar.gz')
+system('rm -rf RWebLogo/build/RWebLogo_1.0.2.tar.gz')
 system('R CMD BUILD RWebLogo')
 
-system('mv RWebLogo_1.0.1.tar.gz RWebLogo/build/RWebLogo_1.0.1.tar.gz')
-system('R CMD INSTALL RWebLogo/build/RWebLogo_1.0.1.tar.gz')
-
-#install.packages('gitter_1.0.tar.gz', repos = NULL, type="source")
-detach("package:RWebLogo", unload=TRUE)
+system('mv RWebLogo_1.0.2.tar.gz RWebLogo/build/RWebLogo_1.0.2.tar.gz')
+install.packages("RWebLogo/build/RWebLogo_1.0.2.tar.gz", repos = NULL, type = "source")
